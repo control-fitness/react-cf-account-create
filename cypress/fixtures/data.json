@@ -1,0 +1,45 @@
+{
+  "cookies": {
+    "locale": {
+      "key": "cf-locale",
+      "value": "en"
+    },
+    "server": {
+      "key": "cf-server-url",
+      "value": "http://public.lvh.me:3000/graphql"
+    }
+  },
+  "inputs": {
+    "company": {
+      "name": {
+        "value": "Fitness"
+      },
+      "country": {
+        "position": 0,
+        "item": 3
+      },
+      "currency": {
+        "position": 1,
+        "item": 10
+      },
+      "timezone": {
+        "position": 2,
+        "item": 15
+      }
+    },
+    "user": {
+      "name": {
+        "value": "Paulo McNally"
+      },
+      "email": {
+        "value": "paulomcnally@gmail.com"
+      },
+      "password": {
+        "value": "12345678"
+      }
+    },
+    "terms": {
+      "text": "I agree to the Terms and Conditions"
+    }
+  }
+}

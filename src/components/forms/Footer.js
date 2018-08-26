@@ -10,18 +10,20 @@ class Footer extends PureComponent {
     this.state = {
       accept: false,
       form: store.getState().form,
+      sent: false,
     };
 
     store.subscribe(() => {
       this.setState({
         accept: store.getState().form.errors.terms.accept,
         form: store.getState().form,
+        sent: store.getState().form.inputs.button.submit,
       });
     });
   }
 
   render() {
-    const { accept, form } = this.state;
+    const { accept, form, sent } = this.state;
     const { setValue, submit } = this.props;
     return (
       <Form>
@@ -31,6 +33,8 @@ class Footer extends PureComponent {
           error={accept}
         />
         <Button
+          loading={sent}
+          disabled={sent}
           onClick={() => { submit(form); }}
           primary
           floated="right"

@@ -17,3 +17,15 @@ Run docs
 Run dist
 
     $ yarn dist
+
+## Run test
+
+Run this project
+
+    $ yarn start
+
+Run graphql server (http://bitbucket.com/controlfitness/graphql)
+
+    $ docker-compose up -d && heroku local
+
+Run cypress app (on you're OS).

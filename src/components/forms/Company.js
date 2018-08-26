@@ -2,8 +2,9 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Form } from 'semantic-ui-react';
 import I18n from 'react-cf-helper-i18n';
-import countries from '../../data/countries';
-import currencies from '../../data/currencies';
+import countries from 'react-cf-data-countries';
+import currencies from 'react-cf-data-currencies';
+import timeZones from 'react-cf-data-timezones';
 import store from '../../store';
 
 class Company extends PureComponent {
@@ -11,7 +12,6 @@ class Company extends PureComponent {
     super(props);
     this.state = {
       name: false,
-      tenant: false,
       country: false,
       currency: false,
     };
@@ -20,9 +20,9 @@ class Company extends PureComponent {
       const { form } = store.getState();
       this.setState({
         name: form.errors.company.name,
-        tenant: form.errors.company.tenant,
         country: form.errors.company.country,
         currency: form.errors.company.currency,
+        timeZone: form.errors.company.timeZone,
       });
     });
   }
@@ -30,9 +30,9 @@ class Company extends PureComponent {
   render() {
     const {
       name,
-      tenant,
       country,
       currency,
+      timeZone,
     } = this.state;
     const { setValue } = this.props;
     return (
@@ -42,16 +42,8 @@ class Company extends PureComponent {
             label={I18n.t('account.create.company.form.name')}
             placeholder={I18n.t('account.create.company.form.name')}
             onChange={event => setValue(event.target.value, 'name')}
+            autoFocus="autofocus"
             error={name}
-            fluid
-          />
-        </Form.Field>
-        <Form.Field required>
-          <Form.Input
-            label={I18n.t('account.create.company.form.tenant')}
-            placeholder={I18n.t('account.create.company.form.tenant')}
-            onChange={event => setValue(event.target.value, 'tenant')}
-            error={tenant}
             fluid
           />
         </Form.Field>
@@ -77,6 +69,18 @@ class Company extends PureComponent {
             selection
             options={currencies}
             error={currency}
+          />
+        </Form.Field>
+        <Form.Field required>
+          <Form.Dropdown
+            onChange={(_, data) => setValue(data.value, 'timeZone')}
+            label={I18n.t('account.create.company.form.timeZone')}
+            placeholder={I18n.t('account.create.company.form.timeZone')}
+            fluid
+            search
+            selection
+            options={timeZones}
+            error={timeZone}
           />
         </Form.Field>
       </Form>

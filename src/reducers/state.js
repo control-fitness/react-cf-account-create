@@ -6,9 +6,9 @@ module.exports = {
   errors: {
     company: {
       name: false,
-      tenant: false,
       country: false,
       currency: false,
+      timeZone: false,
     },
     user: {
       name: false,
@@ -22,9 +22,9 @@ module.exports = {
   inputs: {
     company: {
       name: '',
-      tenant: '',
       country: '',
       currency: '',
+      timeZone: '',
     },
     user: {
       name: '',
@@ -33,6 +33,9 @@ module.exports = {
     },
     terms: {
       accept: false,
+    },
+    button: {
+      submit: false,
     },
   },
 };

@@ -39,3 +39,10 @@ export const termsErrors = (value, property) => ({
   value,
   property,
 });
+
+export const buttonInputs = (value, property) => ({
+  root: 'button',
+  type: 'inputs',
+  value,
+  property,
+});
