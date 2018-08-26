@@ -1,7 +1,7 @@
 /* globals describe it cy */
 
-describe('Kitchen Sink', () => {
-  it('.should() - assert that <title> is correct', () => {
+describe('Control Fitness - Account - Create', () => {
+  it('Create a company and user account', () => {
     cy.fixture('data').then((json) => {
       // set cookies
       cy.setCookie(json.cookies.server.key, json.cookies.server.value);
