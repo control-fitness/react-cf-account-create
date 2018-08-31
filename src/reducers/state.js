@@ -3,6 +3,13 @@
  */
 
 module.exports = {
+  api: {
+    submit: {
+      success: false,
+      response: false,
+      messages: [],
+    },
+  },
   errors: {
     company: {
       name: false,

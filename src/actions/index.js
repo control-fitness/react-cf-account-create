@@ -46,3 +46,11 @@ export const buttonInputs = (value, property) => ({
   value,
   property,
 });
+
+
+export const apiSubmit = (value, property) => ({
+  root: 'submit',
+  type: 'api',
+  value,
+  property,
+});

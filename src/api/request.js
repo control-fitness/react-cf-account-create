@@ -1,7 +1,7 @@
 import Client, { Cookies, Graphql } from 'react-cf-graphql-client';
 
-const request = function request(form, callback) {
-  Client.mutate({
+const request = function request(form) {
+  return Client.mutate({
     mutation: Graphql`
       mutation AccountRegister {
         accountRegister(input: {
@@ -22,7 +22,7 @@ const request = function request(form, callback) {
         }
       }
     `,
-  }).then(callback);
+  });
 };
 
 export default request;
