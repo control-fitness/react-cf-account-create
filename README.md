@@ -1,31 +1,15 @@
-# react-component-base
+# react-cf-component-account-create
 
-React Component Base.
+Control Fitness - Account - Create
 
-Clone repository
+![Imgur](https://i.imgur.com/fdH0Kd7.png)
 
-    $ git clone https://github.com/js-ni/react-component-base.git
+## Example / develop
 
-Install dependencies
+http://localhost:8080
 
-    $ yarn
+  yarn start
 
-Run docs
+## Test
 
-    $ yarn start
-
-Run dist
-
-    $ yarn dist
-
-## Run test
-
-Run this project
-
-    $ yarn start
-
-Run graphql server (http://bitbucket.com/controlfitness/graphql)
-
-    $ docker-compose up -d && heroku local
-
-Run cypress app (on you're OS).
+  Load the project directory with https://www.cypress.io/
