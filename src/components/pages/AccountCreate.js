@@ -26,7 +26,7 @@ class AccountCreate extends PureComponent {
     } else if (!is.undefined(tenant)) {
       // remove cf-tenant cookie
       Cookies.remove('cf-tenant');
-      
+
       // reload page
       window.location.reload();
     }
