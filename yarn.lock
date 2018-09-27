@@ -4299,17 +4299,17 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-cf-data-countries@latest:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/react-cf-data-countries/-/react-cf-data-countries-0.0.1.tgz#7e5b8d827c252485706a2bda504b292a753b6749"
+react-cf-data-countries@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/react-cf-data-countries/-/react-cf-data-countries-0.0.2.tgz#c090dbd4107f3de2cd30741c5edefca8c62ca8a1"
   dependencies:
-    react-cf-helper-i18n latest
+    react-cf-helper-i18n "^0.1.2"
 
-react-cf-data-currencies@latest:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/react-cf-data-currencies/-/react-cf-data-currencies-0.0.1.tgz#0ebdcf26785380875743dc48a3b5acbd43372d56"
+react-cf-data-currencies@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/react-cf-data-currencies/-/react-cf-data-currencies-0.0.2.tgz#7729a8ec9bf0b7df629769dd449a35d7432a5893"
   dependencies:
-    react-cf-helper-i18n latest
+    react-cf-helper-i18n "^0.1.2"
 
 react-cf-data-timezones@latest:
   version "0.0.1"
@@ -4331,12 +4331,6 @@ react-cf-helper-cdn@latest:
 react-cf-helper-i18n@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/react-cf-helper-i18n/-/react-cf-helper-i18n-0.1.2.tgz#4747051b2a23c7f9547290d58106bc249aaff8dd"
-  dependencies:
-    js-cookie "^2.2.0"
-
-react-cf-helper-i18n@latest:
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/react-cf-helper-i18n/-/react-cf-helper-i18n-0.0.15.tgz#40dc07f06c11bbc40b09c7c0b5be7bec4bb2978e"
   dependencies:
     js-cookie "^2.2.0"
 
