@@ -1,6 +1,6 @@
 {
   "name": "react-cf-component-account-create",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Control Fitness - Account - Create",
   "main": "index.js",
   "repository": "https://github.com/control-fitness/react-cf-component-account-create.git",
@@ -23,7 +23,7 @@
     "react-cf-data-countries": "^0.0.2",
     "react-cf-data-currencies": "^0.0.2",
     "react-cf-data-timezones": "latest",
-    "react-cf-graphql-client": "latest",
+    "react-cf-graphql-client": "^0.0.7",
     "react-cf-helper-cdn": "^0.0.3",
     "react-cf-helper-i18n": "^0.1.2",
     "react-dom": "^16.4.1",
